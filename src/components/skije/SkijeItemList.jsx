@@ -8,7 +8,7 @@ const SkijeItemList = ({skije}) => {
         <div className="all-skies">
             <Grid container style={{marginLeft:'auto',marginRight:'auto',width:'80%'}}>
                     {skije.map((skije) => (
-                        <Grid item xs={4}>
+                        <Grid item xs={4} key={skije.id}  >
                             <SkijeItem skije={skije} />
                         </Grid>
                         ))}

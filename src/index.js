@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SkijeProvider } from './store/SkijeContext';
-
+import {BrowserRouter} from 'react-router-dom'
 
 ReactDOM.render(
+  <BrowserRouter>
   <SkijeProvider>
       <App />
     </SkijeProvider>
-
+    </BrowserRouter>
   ,
 
 document.getElementById('root'));
